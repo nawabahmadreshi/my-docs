@@ -14,6 +14,8 @@ const config = {
   // ✅ GitHub Pages settings (IMPORTANT)
   url: 'https://nawabahmadreshi.github.io',
   baseUrl: '/my-docs/',
+  trailingSlash: false,
+
 
   // ✅ Your GitHub repo
   organizationName: 'nawabahmadreshi',
