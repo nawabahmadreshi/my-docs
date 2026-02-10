@@ -8,17 +8,17 @@ const PROFILE = {
   name: 'Nawab Ahmad Reshi',
   title: 'Information Architect • Technical Writer • Docs-as-Code',
   blurb:
-    'I design documentation as a product with strong information architecture, developer-first content, and docs pipelines that ship with code. I translate complex cloud and platform systems into clear, usable experiences.'
+    'I design documentation as a product with strong information architecture, developer-first content, and docs pipelines that ship with code. I translate complex cloud and platform systems into clear, usable experiences.',
   location: 'Open to remote / hybrid',
   email: 'nawabreshi2022@gmail.com',
   github: 'https://github.com/nawabahmadreshi',
-  linkedin: 'https://www.linkedin.com/in/nawab-ahmad-b11496241/', 
+  linkedin: 'https://www.linkedin.com/in/nawab-ahmad-b11496241/',
 };
 
 const STATS = [
-  {label: 'Experience', value: '14+ years'},
-  {label: 'Focus', value: 'Enterprise + Cloud'},
-  {label: 'Strength', value: 'IA + Developer Docs'},
+  { label: 'Experience', value: '14+ years' },
+  { label: 'Focus', value: 'Enterprise + Cloud' },
+  { label: 'Strength', value: 'IA + Developer Docs' },
 ];
 
 const HIGHLIGHTS = [
@@ -85,18 +85,19 @@ const SKILLS = [
   },
 ];
 
-function Pill({children}) {
+function Pill({ children }) {
   return <span className={styles.pill}>{children}</span>;
 }
 
-function Card({title, desc, tags, href, cta}) {
+function Card({ title, desc, tags = [], href, cta }) {
   const external = href?.startsWith('http');
   return (
     <a
       className={styles.card}
       href={href}
       target={external ? '_blank' : undefined}
-      rel={external ? 'noreferrer' : undefined}>
+      rel={external ? 'noreferrer' : undefined}
+    >
       <div className={styles.cardTop}>
         <h3 className={styles.cardTitle}>{title}</h3>
         <span className={styles.cardIcon} aria-hidden="true">
@@ -104,11 +105,13 @@ function Card({title, desc, tags, href, cta}) {
         </span>
       </div>
       <p className={styles.cardDesc}>{desc}</p>
+
       <div className={styles.pills}>
         {tags.map((t) => (
           <Pill key={t}>{t}</Pill>
         ))}
       </div>
+
       <div className={styles.cardCta}>
         <span>{cta}</span>
         <span aria-hidden="true">→</span>
@@ -134,7 +137,10 @@ export default function Home() {
               <p className={styles.lead}>{PROFILE.blurb}</p>
 
               <div className={styles.actions}>
-                <a className={clsx(styles.btn, styles.btnPrimary)} href={`mailto:${PROFILE.email}`}>
+                <a
+                  className={clsx(styles.btn, styles.btnPrimary)}
+                  href={`mailto:${PROFILE.email}`}
+                >
                   Contact
                 </a>
                 <a className={styles.btn} href={PROFILE.github} target="_blank" rel="noreferrer">
@@ -145,7 +151,6 @@ export default function Home() {
                 </a>
                 <Link className={styles.btn} to="/docs/intro">
                   Writing Samples
-                    
                 </Link>
               </div>
 
@@ -183,7 +188,8 @@ export default function Home() {
           <div className={styles.sectionHead}>
             <h2 className={styles.h2}>Featured work</h2>
             <p className={styles.sectionSub}>
-              Case-study style highlights across information architecture, developer documentation, and delivery pipelines.
+              Case-study style highlights across information architecture, developer documentation, and delivery
+              pipelines.
             </p>
           </div>
 
@@ -219,17 +225,20 @@ export default function Home() {
         <section className={styles.section}>
           <div className={styles.contact}>
             <div>
-              <h2 className={styles.h2} style={{marginBottom: 6}}>
+              <h2 className={styles.h2} style={{ marginBottom: 6 }}>
                 Let’s build documentation people love using
               </h2>
-              <p className={styles.sectionSub} style={{marginBottom: 0}}>
+              <p className={styles.sectionSub} style={{ marginBottom: 0 }}>
                 If you’re hiring for Information Architecture, Technical Writing, Developer Experience, or Docs-as-Code,
                 I’d love to connect.
               </p>
             </div>
 
             <div className={styles.actions}>
-              <a className={clsx(styles.btn, styles.btnPrimary)} href={`mailto:${PROFILE.email}`}>
+              <a
+                className={clsx(styles.btn, styles.btnPrimary)}
+                href={`mailto:${PROFILE.email}`}
+              >
                 Email
               </a>
               <a className={styles.btn} href={PROFILE.github} target="_blank" rel="noreferrer">
