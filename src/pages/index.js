@@ -8,15 +8,15 @@ const PROFILE = {
   name: 'Nawab Ahmad Reshi',
   title: 'Information Architect • Technical Writer • Docs-as-Code',
   blurb:
-    'I design documentation as a product—strong information architecture, developer-first content, and docs pipelines that ship with code. I translate complex cloud and platform systems into clear, usable experiences.',
+    'I design documentation as a product with strong information architecture, developer-first content, and docs pipelines that ship with code. I translate complex cloud and platform systems into clear, usable experiences.'
   location: 'Open to remote / hybrid',
   email: 'nawabreshi2022@gmail.com',
   github: 'https://github.com/nawabahmadreshi',
-  linkedin: 'https://www.linkedin.com/in/YOUR_LINKEDIN', // update
+  linkedin: 'https://www.linkedin.com/in/nawab-ahmad-b11496241/', 
 };
 
 const STATS = [
-  {label: 'Experience', value: '13+ years'},
+  {label: 'Experience', value: '14+ years'},
   {label: 'Focus', value: 'Enterprise + Cloud'},
   {label: 'Strength', value: 'IA + Developer Docs'},
 ];
@@ -145,6 +145,7 @@ export default function Home() {
                 </a>
                 <Link className={styles.btn} to="/docs/intro">
                   Writing Samples
+                    
                 </Link>
               </div>
 
