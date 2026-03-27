@@ -132,6 +132,17 @@ html[data-theme='dark'] .heroRight {
   filter: brightness(0.98);
 }
 
+.btnResume {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.btnResume:hover {
+  background: rgba(59, 130, 246, 0.03);
+  border-color: var(--ifm-color-primary-darker);
+  box-shadow: 0 0 12px rgba(59, 130, 246, 0.15);
+}
+
 /* Meta line */
 .meta {
   display: flex;

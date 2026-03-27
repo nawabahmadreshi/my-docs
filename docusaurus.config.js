@@ -3,8 +3,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Nawab Ahmad Reshi',
+  tagline: 'Information Architect | Complex Systems & Infrastructure',
   favicon: 'img/favicon.ico',
 
   future: {
@@ -63,19 +63,12 @@ const config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'My Site',
+      title: 'Nawab Ahmad Reshi',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Nawab Ahmad Reshi Logo',
         src: 'img/logo.svg',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Tutorial',
-        },
-        {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/nawabahmadreshi/my-docs',
           label: 'GitHub',
@@ -87,10 +80,6 @@ const config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
-          items: [{label: 'Tutorial', to: '/docs/intro'}],
-        },
-        {
           title: 'Community',
           items: [
             {label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus'},
@@ -101,12 +90,11 @@ const config = {
         {
           title: 'More',
           items: [
-            {label: 'Blog', to: '/blog'},
             {label: 'GitHub', href: 'https://github.com/nawabahmadreshi/my-docs'},
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Nawab Ahmad Reshi. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Nawab Ahmad Reshi</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text-main: #111827;
+            --text-muted: #4b5563;
+            --bg-light: #f9fafb;
+            --border: #e5e7eb;
+            --accent: #8b5cf6;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background: #d1d5db; /* Gray background behind the "paper" */
+            padding: 40px 0;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: white;
+            padding: 60px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            border-bottom: 2px solid var(--text-main);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+
+        .title-sub {
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--primary);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            list-style: none;
+            font-size: 13px;
+        }
+
+        .contact-info li {
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-muted);
+        }
+
+        .contact-info a {
+            color: inherit;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+        }
+
+        .contact-info a:hover {
+            border-bottom-color: var(--text-muted);
+        }
+
+        /* Layout Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 15px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid var(--border);
+            color: var(--text-muted);
+        }
+
+        .summary {
+            font-size: 14px;
+            color: var(--text-main);
+            margin-bottom: 20px;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company {
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        .duration {
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text-muted);
+        }
+
+        .role {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .exp-desc {
+            font-size: 13.5px;
+            color: var(--text-muted);
+        }
+
+        .skills-group {
+            margin-bottom: 20px;
+        }
+
+        .skills-group-title {
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+
+        .skills-list {
+            list-style: none;
+            font-size: 13px;
+        }
+
+        .skills-list li {
+            margin-bottom: 6px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+        }
+
+        /* Print Button (Hidden in Print) */
+        .print-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            z-index: 100;
+            transition: transform 0.1s;
+        }
+
+        .print-btn:active {
+            transform: scale(0.95);
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                max-width: 100%;
+                padding: 0;
+            }
+            .print-btn {
+                display: none;
+            }
+            @page {
+                size: A4;
+                margin: 20mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">Print to PDF</button>
+
+    <div class="resume-container">
+        <header>
+            <div>
+                <h1>Nawab Ahmad Reshi</h1>
+                <p class="title-sub">Information Architect | Complex Systems & Infrastructure</p>
+                <ul class="contact-info">
+                    <li>📍 Open to remote / hybrid</li>
+                    <li>✉️ <a href="mailto:nawabreshi2022@gmail.com">nawabreshi2022@gmail.com</a></li>
+                </ul>
+            </div>
+            <ul class="contact-info" style="text-align: right;">
+                <li><a href="https://linkedin.com/in/nawab-ahmad-b11496241/">linkedin.com/in/nawab-ahmad</a></li>
+                <li><a href="https://github.com/nawabahmadreshi">github.com/nawabahmadreshi</a></li>
+            </ul>
+        </header>
+
+        <div class="grid">
+            <div class="main-col">
+                <section>
+                    <h2>Professional Profile</h2>
+                    <p class="summary">
+                        Information Architect with 14+ years of experience designing scalable documentation systems for complex platforms, including infrastructure, distributed systems, and network-aware applications. Expertise in DITA, Markdown, LaTeX, and Git-based workflows, with strong experience translating complex engineering concepts into structured, user-centric documentation. Currently expanding domain expertise in Complex Systems & Infrastructure, industrial networking, and communication protocols.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Experience Highlights</h2>
+                    
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div class="company">Engineering Documentation & Infrastructure</div>
+                            <div class="duration">Aquera</div>
+                        </div>
+                        <div class="role">Information Architect</div>
+                        <p class="exp-desc">
+                            Documented system architectures and integration workflows for complex distributed platforms, aligning with infrastructure and network-based systems. Collaborated with engineers to translate backend systems, APIs, and infrastructure components into structured documentation.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div class="company">System Architecture & Documentation Strategy</div>
+                            <div class="duration">Samsung / Eclipse</div>
+                        </div>
+                        <div class="role">Information Architect</div>
+                        <p class="exp-desc">
+                            Designed task-based navigation and metadata strategy for large-scale engineering environments. Created visual representations of system workflows, architecture interactions, and cross-platform integrations to reduce user friction.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="exp-header">
+                            <div class="company">Docs-as-Code Portfolio</div>
+                            <div class="duration">Docusaurus + Automation</div>
+                        </div>
+                        <div class="role">Technical Lead</div>
+                        <p class="exp-desc">
+                            Developed a production-ready documentation site with PR-based updates, automated builds, and GitHub Pages deployment, supporting scalable, modular content similar to industrial environments.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="side-col">
+                <section>
+                    <h2>Industrial & Networking</h2>
+                    <ul class="skills-list">
+                        <li>Complex Systems & Infrastructure</li>
+                        <li>Industrial Protocols (Modbus, OPC)</li>
+                        <li>TCP/IP, VLANs, VPNs, IP Routing</li>
+                        <li>System Architecture & Topology</li>
+                        <li>Distributed Systems Workflows</li>
+                        <li>Infrastructure Awareness</li>
+                        <li>Real-Time & Data Acquisition</li>
+                        <li>Cross-System Communication</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Technical Expertise</h2>
+                    <div class="skills-group">
+                        <p class="skills-group-title">Documentation Architectures</p>
+                        <ul class="skills-list">
+                            <li>System Architecture Layouts</li>
+                            <li>Network Topology Visualization</li>
+                            <li>API Strategy (REST, OpenAPI)</li>
+                            <li>Installation & Operational Docs</li>
+                            <li>Security & Access Control</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-group">
+                        <p class="skills-group-title">Tools & Delivery</p>
+                        <ul class="skills-list">
+                            <li>Git, GitHub, CI/CD Pipelines</li>
+                            <li>AI Agentic Tooling & Automation</li>
+                            <li>Visio, Miro, Network Diagrams</li>
+                            <li>XML/DITA, Markdown, LaTeX</li>
+                            <li>Docusaurus, React, Node.js</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <footer>
+            <p style="font-size: 10px; color: var(--text-muted); margin-top: 40px; text-align: center; font-style: italic;">
+                Generated programmatically to reflect current professional competencies. Available at nawabahmadreshi.github.io/my-docs/
+            </p>
+        </footer>
+    </div>
+
+</body>
+</html>
