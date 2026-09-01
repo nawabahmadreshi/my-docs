@@ -7,9 +7,9 @@ import styles from './index.module.css';
 
 const PROFILE = {
   name: 'Nawab Ahmad Reshi',
-  title: 'Information Architect | Complex Systems & Infrastructure, Network Systems & Technical Publishing',
+  title: 'AI-Driven Platform Engineer | Documentation Infrastructure',
   blurb:
-    'Information Architect with 14+ years of experience designing scalable documentation systems for complex platforms, including infrastructure, distributed systems, and network-aware applications. Intermediate experience in building AI agentic tooling to automate and enhance documentation workflows. Expertise in DITA, Markdown, LaTeX, and Git-based workflows, with strong experience translating complex engineering concepts into structured, user-centric documentation. Currently expanding domain expertise in Complex Systems & Infrastructure, industrial networking, and communication protocols.',
+    'Platform and Frontend Engineer with 14+ years of experience, operating with the speed, urgency, and excellence required to build secure Documentation Infrastructure. As a builder and owner, I leverage Machine Learning (ML), Agentic AI, and MCP servers to architect automated, "paved-road" developer experiences and CI/CD pipelines. Passionate about engineering scalable, Git-based docs-as-code workflows and robust cloud infrastructure while enforcing strict IAM & Governance best practices to eliminate friction and accelerate the broader Builder Experience.',
   location: 'Open to remote / hybrid',
   email: 'nawabreshi2022@gmail.com',
   github: 'https://github.com/nawabahmadreshi',
@@ -18,75 +18,68 @@ const PROFILE = {
 
 const STATS = [
   { label: 'Experience', value: '14+ years' },
-  { label: 'Focus', value: 'Engineering & Infrastructure' },
-  { label: 'Strength', value: 'Architecture & System IA' },
+  { label: 'Focus', value: 'Docs Infrastructure' },
+  { label: 'Workflow', value: 'Agentic AI / ML' },
+  { label: 'Domain', value: 'IAM & Governance' },
 ];
 
 const HIGHLIGHTS = [
-  'Engineering Architecture: System workflows, topology, & interactions',
-  'Complex System Translation: Complex Systems & Infrastructure, networking, and network architecture',
-  'AI Agentic Tooling: Building automated documentation & agentic workflows',
-  'Docs-as-code: CI/CD, Git-based workflows, & automated delivery',
+  'Agentic AI & ML: Designing Agentic AI workflows and integrating Machine Learning (ML) and MCP servers to radically accelerate infrastructure development',
+  'Docs Infrastructure: Architecting the platforms, build tools, and technical stacks that power large-scale content sites',
+  'IAM & Security Governance: Implementing strict Identity and Access Management controls and governance standards across CI/CD pipelines and cloud infrastructure',
+  'Frontend Engineering: 10+ years of experience overseeing and delivering production-ready frontend environments',
 ];
 
 const CASE_STUDIES = [
   {
-    title: 'Engineering Documentation & Infrastructure (Aquera)',
+    title: 'Secure Developer Portals & Paved Roads',
     desc:
-      'Documented system architectures and integration workflows for complex distributed platforms, aligning with infrastructure and network-based systems. Collaborated with engineers to translate backend systems, APIs, and infrastructure components into structured documentation.',
-    tags: ['Distributed Systems', 'Infrastructure', 'API Strategy', 'Network-aware Apps'],
+      'Led the engineering of secure, highly-available developer portals. Built "paved roads" for documentation tooling that eliminated friction for technical writers while enforcing strict IAM controls and security policies.',
+    tags: ['React', 'DevEx', 'IAM', 'Security Governance'],
     href: '#',
   },
   {
-    title: 'System Architecture & Documentation Strategy (Samsung/Eclipse)',
+    title: 'Agentic AI & ML Infrastructure Workflows',
     desc:
-      'Designed task-based navigation and metadata strategy for large-scale engineering environments. Created visual representations of system workflows, architecture interactions, and cross-platform integrations to reduce user friction.',
-    tags: ['System Architecture', 'Technical Workflows', 'Metadata Strategy', 'Governance'],
+      'Spearheaded the integration of Agentic AI, Machine Learning (ML), and MCP servers into core engineering practices. Automated complex build processes and drastically accelerated the speed of infrastructure delivery.',
+    tags: ['Agentic AI', 'Machine Learning', 'Workflow Automation'],
     href: '#',
   },
   {
-    title: 'Docs-as-Code Portfolio (Docusaurus + Automation)',
+    title: 'Docs-as-Code CI/CD & Cloud Infrastructure',
     desc:
-      'A production-ready documentation site with PR-based updates, automated builds, and GitHub Pages deployment, supporting scalable, modular content similar to industrial environments.',
-    tags: ['Docusaurus', 'GitHub Actions', 'Docs-as-Code', 'CI/CD'],
+      'Architected scalable CI/CD pipelines (GitHub Actions, Vercel) for large-scale content delivery. Owned the end-to-end cloud infrastructure (AWS/GCP), optimizing build tooling and operating with uncompromising excellence.',
+    tags: ['CI/CD', 'GitHub Actions', 'Docs-as-Code', 'Cloud'],
     href: 'https://nawabahmadreshi.github.io/my-docs/',
   },
 ];
 
 const SKILLS = [
   {
-    title: 'Technical Documentation Expertise',
+    title: 'Documentation Infrastructure & Platform Engineering',
     items: [
-      'System Architecture & Topology Documentation',
-      'Network Configuration & Infrastructure Documentation',
-      'API & Protocol Documentation (REST, OpenAPI, Distributed Systems)',
-      'Installation & Configuration Guides',
-      'End-user & Operational Documentation',
-      'Security, Access Control & System Workflow Docs',
+      'Building secure, "paved-road" developer experiences and portals',
+      'End-to-end ownership of frontend stacks (React) and production performance',
+      'Architecting large-scale docs-as-code workflows and DITA localization',
+      'Eliminating technical debt to accelerate the Builder Experience',
     ],
   },
   {
-    title: 'Industrial & Networking Concepts',
+    title: 'Agentic AI, ML & Workflow Automation',
     items: [
-      'Complex Systems & Infrastructure (Foundational Knowledge)',
-      'Industrial Communication Protocols (Modbus, OPC – working knowledge)',
-      'Networking Fundamentals: TCP/IP, VLANs, VPNs, IP Routing',
-      'System Architecture & Network Topology Documentation',
-      'Distributed Systems & Integration Workflows Documentation',
-      'Infrastructure & Network-Aware Documentation Practices',
-      'Technical Documentation for Real-Time and Data Acquisition Systems',
-      'Cross-System Communication & Protocol-Oriented Documentation',
+      'Integrating Machine Learning (ML) and MCP servers into dev pipelines',
+      'Building Agentic AI workflows for automated documentation generation',
+      'Accelerating infrastructure development with advanced AI tooling',
+      'Creating internal automation tools to eliminate friction',
     ],
   },
   {
-    title: 'Build, Delivery & Tools',
+    title: 'Security, IAM Governance & CI/CD',
     items: [
-      'Git/GitHub PR workflows & CI/CD Pipelines',
-      'AI Agentic Tooling: Building automated documentation workflows',
-      'Diagramming: Microsoft Visio, Miro, Network Diagramming',
-      'XML/DITA, Markdown/MDX, JSON/YAML, LaTeX',
-      'Docusaurus customization (React/Node)',
-      'Experience documenting complex, real-time distributed systems',
+      'Implementing strict IAM & Governance controls in cloud environments',
+      'Designing robust CI/CD pipelines (GitHub Actions, CircleCI, Vercel)',
+      'Managing highly secure cloud infrastructure on AWS, Azure, and GCP',
+      'Building secure tooling with a focus on "Always On" reliability',
     ],
   },
 ];
@@ -191,7 +184,7 @@ export default function Home() {
           <div className={styles.sectionHead}>
             <h2 className={styles.h2}>Featured Work & Experience</h2>
             <p className={styles.sectionSub}>
-              Technical leadership in designing documentation for complex infrastructure, distributed platforms, and engineering workflows.
+              A track record of operating with speed and excellence to build secure, AI-driven documentation infrastructure and paved developer roads.
             </p>
           </div>
 
@@ -206,7 +199,7 @@ export default function Home() {
         <section className={styles.sectionAlt}>
           <div className={styles.sectionHead}>
             <h2 className={styles.h2}>Technical Skills</h2>
-            <p className={styles.sectionSub}>Focused on outcomes: clarity, findability, and engineering adoption.</p>
+            <p className={styles.sectionSub}>Focused on eliminating friction, enforcing IAM governance, and accelerating the Builder Experience.</p>
           </div>
 
           <div className={styles.grid3}>
@@ -228,10 +221,10 @@ export default function Home() {
           <div className={styles.contact}>
             <div>
               <h2 className={styles.h2} style={{ marginBottom: 6 }}>
-                Let’s build documentation for complex systems
+                Ready to build secure, AI-driven developer experiences?
               </h2>
               <p className={styles.sectionSub} style={{ marginBottom: 0 }}>
-                Specializing in Complex Systems & Infrastructure, Network Systems, and Docs-as-Code. Currently upskilling in industrial automation and communication protocols.
+                Specializing in Documentation Infrastructure, Agentic AI / ML integration, and enforcing strict IAM & Governance to eliminate friction. Let's talk.
               </p>
             </div>
 
